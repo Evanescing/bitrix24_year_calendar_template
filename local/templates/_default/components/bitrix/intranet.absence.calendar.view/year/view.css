@@ -1,0 +1,98 @@
+tr.bx-calendar-week-currow td {background-color: #E3EEF3 !important;}
+
+.bx-calendar-week-main-table{border-top: solid 1px #C9C9C9; border-left: solid 1px #C9C9C9; border-spacing: 0;}
+
+.bx-calendar-week-main-table td {padding: 2px 0px; vertical-align: middle; border-right: solid 1px #C9C9C9; border-bottom: solid 1px #C9C9C9; font-size: 0.95em;  -moz-box-sizing: border-box;}
+.bx-calendar-week-main-table td.bx-calendar-week-day {font-size: 0.95em; text-align: center; padding: 4px;}
+.bx-calendar-week-main-table td.bx-calendar-week-holiday {background-color: #f2f8d6; color: #C30808;}/*#f7f8e9*/
+.bx-calendar-week-main-table td.bx-calendar-week-holiday a {color: #C30808;}
+.bx-calendar-week-main-table td.bx-calendar-week-today {background-color: #e3ec26;}
+
+.bx-calendar-week-main-table td.bx-calendar-week-first-col div {width: 224px !important; white-space: nowrap; overflow: hidden; display: block; padding: 0px 0px 0px 6px;}
+.bx-calendar-week-main-table td.bx-calendar-week-first-col {width: 230px; height: 20px; white-space: nowrap; overflow: hidden;}
+.bx-calendar-week-main-table td.bx-calendar-week-first-col.year-empty {width: 70px;}
+
+table.bx-calendar-week-control-table {border-collapse: collapse; border: none;}
+table.bx-calendar-week-control-table td {border-collapse: collapse; border: none; padding: 7px 10px 7px 10px; text-align: center; vertical-align: center; font-weight: bold; font-size: 16px; color: #0C283D; white-space: nowrap;}
+table.bx-calendar-week-control-table td.bx-calendar-week-control-text a {text-decoration: none;}
+
+.bx-calendar-week-main-table td.bx-calendar-week-empty {width: 230px; height: 20px; background-color:#FFFFFF;}
+
+
+.bx-calendar-week-icon {display: block; height: 21px; width: 21px; background-repeat: no-repeat; background-image: url(/bitrix/components/bitrix/intranet.absence.calendar/templates/.default/images/arrows.gif);}
+.bx-calendar-week-back {background-position: 0 0;}
+.bx-calendar-week-fwd {background-position: -21px 0;}
+
+div.bx-calendar-entry {position: absolute; height: 17px; background-repeat: repeat-x; background-position: left top; overflow: hidden; cursor: pointer; -moz-box-sizing: border-box; box-sizing: border-box; text-align: left; z-index: 20;}
+div.bx-calendar-entry nobr {position: absolute; height: 16px; background-repeat: repeat-x; background-position: left top; white-space: nowrap; font-size: 10px; padding: 1px 0px 0px 2px;}
+div.bx-calendar-entry-active, div.bx-calendar-entry-active nobr {background-position: left bottom; overflow: visible !important; z-index: 30;}
+div.bx-calendar-entry-active nobr.bx-calendar-admin {padding-right: 36px;}
+
+div.bx-calendar-entry a.bx-calendar-delete {position: absolute; display: none; width: 17px; height: 17px; right: 0px; top: 0px; padding: 0px; background-image: url(images/calendar_btns.gif);}
+div.bx-calendar-entry a.bx-calendar-edit {position: absolute; display: none; width: 17px; height: 17px; right: 18px; top: 0px; padding: 0px; background-image: url(images/calendar_btns.gif);}
+div.bx-calendar-entry-active a.bx-calendar-delete {display: block; background-position: top left !important; background-repeat: no-repeat;}
+div.bx-calendar-entry-active a.bx-calendar-edit {display: block; background-position: top right !important; background-repeat: no-repeat;}
+
+td.year_user_rotate {
+	writing-mode:rl-tb;
+	filter:flipH() flipV();
+	height: 240px;
+    font-size: 0.9em;
+    line-height: 0.9em;
+	-moz-filter:flipH() flipV();
+}
+td.year_user_rotate div {
+	-webkit-transform: rotate(-90deg); 
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	width: 15px;
+    margin-top: 215px;
+    white-space: nowrap;
+}
+td.year_user_rotate div a {text-decoration: none;}
+td.year_user_rotate div a:hover {text-decoration: underline;}
+.bx-calendar-week-main-table.year-tpl-table td.bx-calendar-week-day {
+    font-size: 0.90em;
+    text-align: center;
+    padding: 2px;
+}
+.bx-absence-calendar {padding:1px;}
+
+#row-daysholiday td,
+#row-daysholiday-already td {
+	text-align: center;
+	font-size: 88%;
+}
+#row-daysholiday td {
+	border-top-color: #999;
+}
+#row-daysholiday-already td {
+	border-bottom-color: #999;
+}
+.red-daysholiday {
+	color: red;
+}
+.planning-entry-finished {
+
+}
+.user_adj_closed div {
+}
+.user_adj_closed div:before {
+	content: " ";
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 13px;
+	width: 15px;
+	/*background: url(/bitrix/components/bitrix/planner/templates/.default/images/planner-sprite.png) no-repeat 0px 4px;*/
+	background: url(/bitrix/templates/light_green/components/bitrix/menu/horizontal_multilevel/images/lock.gif) no-repeat -1px 0px;
+	-webkit-transform: rotate(90deg); 
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	vertical-align: middle;
+    margin-right: 0px;
+}
